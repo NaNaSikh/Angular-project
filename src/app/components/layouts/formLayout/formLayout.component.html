@@ -1,0 +1,6 @@
+<form (submit)="handleSubmit($event)" class="bg-white w-full md:w-[360px]">
+    <h1 class="text-gray-800 font-bold text-2xl mb-1">{{title}}</h1>
+    <p class="text-sm font-normal text-gray-600 mb-7">{{subTitle}}</p>
+    <!-- Form Inputs Here -->
+    <ng-content></ng-content>
+</form>

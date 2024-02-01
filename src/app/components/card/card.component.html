@@ -1,0 +1,21 @@
+<a [routerLink]="'/product-details/' + id">
+    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <img   class="lg:h-auto md:h-36 w-full object-cover object-center" src={{imageUrl}} alt="blog">
+        <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                {{category}}
+            </h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">{{title}}</h1>
+            <p class="leading-relaxed mb-3">{{"productOwner" | translate}}: <span class="text-black">{{productOwner}}</span>
+            </p>
+            <p class="leading-relaxed mb-3">{{"status"| translate}} <span class="text-black">{{status}}</span>
+            </p>
+            <p>{{"cost"| translate}} <span
+                    class="text-gray-400 mr-3 inline-flex mb-2 items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1">
+                    {{salary}}
+                </span></p>
+            <div class="flex items-center flex-wrap ">
+            </div>
+        </div>
+    </div>
+</a>

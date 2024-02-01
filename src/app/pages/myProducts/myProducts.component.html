@@ -1,0 +1,26 @@
+<section class="profile-container flex flex-col">
+    <div class="my-Products mt-6">
+        <div class="mb-4 text-2xl">{{"products" | translate}}</div>
+        
+        <div *ngIf="showConfirmation" class="confirmation-dialog">
+            <p>{{"deteteConfirmation" | translate}}</p>
+            <button (click)="deleteProduct()">{{"yes" | translate}}</button>
+            <button (click)="closeConfirmation()">{{"no" | translate}}</button>
+          </div>
+        <ul>
+            <div class="flex flex-wrap -m-4 overflow-hidden">
+                <div *ngFor="let card of cardsData"
+                    [ngStyle]="{'background-color': getItemBackgroundColor(card.status)}"
+                    class="p-4 md:w-1/3 hover:scale-[1.02] transition-all">
+                    <card [id]="card.id" [category]="card.category" [productOwner]="card.productOwner" [title]="card.title"
+                    [salary]="card.salary" [imageUrl]="card.imageUrl" [status]="card.status">
+                  </card>
+                    <div > 
+                        <button class="px-4 py-2 bg-yellow-500" [routerLink]="'/editProduct/' + card.id">{{"edit" | translate}}</button>
+                        <button class="px-4 py-2 bg-red-500" (click)="openDeleteConfirmation(card.id)">{{"delete" | translate}}</button>
+                    </div>
+                    <div> </div>
+                </div>
+            </div>
+        </ul>
+        <div> </div>

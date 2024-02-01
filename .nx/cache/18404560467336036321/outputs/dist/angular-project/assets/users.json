@@ -1,0 +1,183 @@
+{
+  "registeredUsers": [
+    {
+      "id": "1",
+      "name": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "userName": "john_doe",
+      "password": "password123"
+    },
+    {
+      "id": "2",
+      "name": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@example.com",
+      "userName": "jane_smith",
+      "password": "secure456"
+    },
+    {
+      "id": "3",
+      "name": "Alice",
+      "lastName": "Johnson",
+      "email": "alice.johnson@example.com",
+      "userName": "alice123",
+      "password": "pass321"
+    },
+    {
+      "id": "4bd6",
+      "name": "nana",
+      "lastName": "Sikharulidze",
+      "userName": "sikh",
+      "email": "aaa",
+      "password": "aa"
+    },
+    {
+      "id": "b1c6",
+      "name": "gigi",
+      "lastName": "shalamberidze",
+      "userName": "gigi",
+      "email": "gigi@gmail.com",
+      "password": "Admin123"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "userID": "2",
+      "category": "Electronics",
+      "status": "Active",
+      "title": "Smartphone XZ",
+      "employer": "TechCo",
+      "salary": 799.99,
+      "imageUrl": "https://picsum.photos/720/400?image=1",
+      "description": "The latest Smartphone XZ with a stunning display, powerful camera, and fast performance."
+    },
+    {
+      "id": "2",
+      "category": "Fashion",
+      "status": "Active",
+      "userID": "2",
+      "title": "Men's Leather Jacket",
+      "employer": "FashionHub",
+      "salary": 129.99,
+      "imageUrl": "https://picsum.photos/720/400?image=2",
+      "description": "Premium quality men's leather jacket with a stylish design and comfortable fit."
+    },
+    {
+      "id": "3",
+      "category": "Home & Living",
+      "status": "Active",
+      "userID": "2",
+      "title": "Modern Coffee Table",
+      "employer": "HomeStyle",
+      "salary": 249.99,
+      "imageUrl": "https://picsum.photos/720/400?image=3",
+      "description": "Enhance your living space with this sleek and modern coffee table. Perfect for contemporary interiors."
+    },
+    {
+      "userID": "3",
+      "title": "Wireless Bluetooth Earbuds",
+      "category": "Electronics",
+      "status": "Active",
+      "description": "Enjoy crystal-clear sound with our wireless Bluetooth earbuds. Perfect for music lovers on the go.",
+      "salary": 59.99,
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "userID": "1",
+      "category": "Fashion",
+      "status": "Active",
+      "title": "Women's Elegant Dress",
+      "employer": "ChicCouture",
+      "salary": 149.99,
+      "imageUrl": "https://picsum.photos/720/400?image=6",
+      "description": "Make a statement with our elegant women's dress. Ideal for special occasions and formal events."
+    },
+    {
+      "id": "7",
+      "userID": "1",
+      "category": "Home & Living",
+      "status": "Active",
+      "title": "Smart Thermostat",
+      "employer": "SmartHomeTech",
+      "salary": 129.99,
+      "imageUrl": "https://picsum.photos/720/400?image=7",
+      "description": "Control your home's temperature with our smart thermostat. Save energy and stay comfortable."
+    },
+    {
+      "id": "8",
+      "userID": "1",
+      "category": "Books",
+      "status": "Active",
+      "title": "Sci-Fi Adventure Novel: 'Galactic Odyssey'",
+      "employer": "GalaxyBooks",
+      "salary": 24.99,
+      "imageUrl": "https://picsum.photos/720/400?image=8",
+      "description": "Embark on a thrilling sci-fi adventure with 'Galactic Odyssey.' Explore distant worlds and encounter alien civilizations."
+    },
+    {
+      "id": "9",
+      "userID": "4bd6",
+      "category": "Electronics",
+      "status": "Active",
+      "title": "HD Streaming Media Player",
+      "employer": "StreamMaster",
+      "salary": 79.99,
+      "imageUrl": "https://picsum.photos/720/400?image=9",
+      "description": "Transform your TV into a smart entertainment hub with our HD streaming media player. Access your favorite shows and movies."
+    },
+    {
+      "id": "10",
+      "userID": "4bd6",
+      "category": "Fashion",
+      "status": "Active",
+      "title": "Men's Sport Watch",
+      "employer": "ActiveStyle",
+      "salary": 89.99,
+      "imageUrl": "https://picsum.photos/720/400?image=10",
+      "description": "Stay active and stylish with our men's sport watch. Features include a durable design and advanced fitness tracking."
+    },
+    {
+      "id": "11",
+      "userID": "4bd6",
+      "category": "Home & Living",
+      "status": "Active",
+      "title": "Portable Blender",
+      "employer": "HealthyLiving",
+      "salary": 49.99,
+      "imageUrl": "https://picsum.photos/720/400?image=11",
+      "description": "Blend your favorite smoothies on the go with our portable blender. Compact and convenient for a healthy lifestyle."
+    },
+    {
+      "id": "12",
+      "userID": "4bd6",
+      "category": "Books",
+      "status": "Active",
+      "title": "Historical Fiction Novel: 'Timeless Echo'",
+      "employer": "TimeWarpBooks",
+      "salary": 21.99,
+      "imageUrl": "https://picsum.photos/720/400?image=12",
+      "description": "Immerse yourself in the past with 'Timeless Echo,' a gripping historical fiction novel that transcends time."
+    },
+    {
+      "id": "13",
+      "userID": "4bd6",
+      "category": "Electronics",
+      "status": "Active",
+      "title": "Smart Home Security Camera",
+      "employer": "SecureTech",
+      "salary": 129.99,
+      "imageUrl": "https://picsum.photos/720/400?image=13",
+      "description": "Keep your home secure with our smart home security camera. Monitor your property from anywhere with ease."
+    },
+    {
+      "id": "48c2",
+      "category": "category",
+      "status": "Active",
+      "title": "good Thing",
+      "description": "this is description"
+    }
+  ]
+}

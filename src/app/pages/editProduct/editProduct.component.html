@@ -1,0 +1,47 @@
+<div *ngIf="product$ | async as product">
+
+    <section class="text-gray-600 body-font overflow-hidden">
+        <div class="container px-5 py-6 mx-auto">
+            <div class="lg:w-4/5 mx-auto mb-10">
+                <a routerLink="/"
+                    class="flex w-max mt-6 text-white bg-black border-0 py-2 px-6 focus:outline-none hover:opacity-80 rounded">{{"goBack"|translate}}</a>
+            </div>
+        <form [formGroup] = "editForm" (submit)="editProduct()" >
+            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                    src={{product.imageUrl}}>
+                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <div class="flex items-center gap-2">
+                        <p class="font-light">{{"category"|translate}}:</p>
+                        <h2 class="font-medium text-sm title-font text-gray-500 tracking-widest">
+                        <input formControlName="category" class="pl-2 outline-none border-none" type="text" name="category" id="category" placeholder={{product.category}} />
+                        </h2>
+                    </div>
+                    <p class="flex flex-col gap-1 mt-6 font-bold">{{"title"|translate}}</p>
+                    <input  formControlName="title" class="pl-2 outline-none border-none" type="text" name="title" id="title" placeholder={{product.title}}/>
+                    <p class="flex flex-col gap-1 mt-6 font-bold ">{{"status"|translate}}</p>
+                    <input  formControlName="status" class="pl-2 outline-none border-none" type="text" name="status" id="status" placeholder={{product.status}} />
+                    <div class="flex flex-col gap-1 mt-6">
+                        <p class="font-bold">{{"details"|translate}}:</p>
+                        <input formControlName="description" class="pl-2 outline-none border-none" type="text" name="description" id="description" placeholder={{product.description}} />
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                       
+                        <p class="title-font font-medium text-2xl text-gray-900"><span
+                                class="text-gray-600 font-normal">{{"cost"|translate}}:</span> 
+                                <input formControlName="salary" class="pl-2 outline-none border-none" type="text" name="salary" id="salary" placeholder={{product.salary}} />
+
+                            </p>
+                        <button type="submit"
+                            class="flex w-max mt-6 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"  >{{"edit"|translate}}</button>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+    </section>
+</div>
+
+<div *ngIf="!product$">Product not found</div>

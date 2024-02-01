@@ -1,0 +1,38 @@
+<section class="profile-container flex flex-col">
+    <div class="profile-details flex flex-col gap-4">
+      <img
+        class="w-[50px] h-[50px] object-cover border-2"
+        src="https://i0.wp.com/vssmn.org/wp-content/uploads/2018/12/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png?w=860&ssl=1"
+        alt="Profile Picture"
+      />
+      <div class="flex flex-col items-start gap-3">
+        <h6 class="font-bold text-base">{{ "personalDetails" | translate }}</h6>
+        <div class="flex items-center gap-3 pb-4 border-b">
+          <p>{{ "name" | translate }} : {{ name }}</p>
+  
+          <!-- <p>Name: {{ name }}</p> -->
+        </div>
+        <div class="flex items-center gap-3 pb-4 border-b">
+          <p>{{ "username" | translate }} : {{ username }}</p>
+        </div>
+        <div class="flex items-center gap-3 pb-4 border-b">
+          <p>{{ "email" | translate }} : {{ email }}</p>
+        </div>
+      </div>
+      <a
+        routerLink="/addProduct"
+        routerLinkActive="text-primary"
+        class="px-6 py-3 bg-blue-500 mr-5 font-medium hover:text-gray-900"
+        >{{ "add" | translate }} {{ "new" | translate }} {{ "product" | translate }}</a
+      >
+     
+
+      <a
+        routerLink="/myProducts"
+        routerLinkActive="text-primary"
+        class="px-6 py-3 bg-blue-500 mr-5 font-medium hover:text-gray-900"
+        >{{ "my" | translate }} {{ "products" | translate }}</a
+      >
+    </div>
+  </section>
+  

@@ -1,0 +1,47 @@
+<form  [formGroup] = "addProductForm" (submit)="addProduct()"  >
+    <div class="w-full flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+        <input  formControlName  = "category" class="pl-2 outline-none border-none" type="text" name="category" id="category" placeholder='{{ "category" | translate }}' />
+        <div *ngIf="addProductForm.get('category').invalid && (addProductForm.get('category').dirty || addProductForm.get('category').touched)">
+            <div *ngIf="addProductForm.get('category').errors?.['required']">{{ "category" | translate }} {{ "isRequiered" | translate }}.</div>
+          </div>
+    </div>
+    
+    <div class="w-full flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+        <input formControlName="status" class="pl-2 outline-none border-none" type="text" name="status" id="status" placeholder='{{ "status" | translate }}' />
+        <div *ngIf="addProductForm.get('status').invalid && (addProductForm.get('status').dirty || addProductForm.get('status').touched)">
+            <div *ngIf="addProductForm.get('status').errors?.['required']">{{ "satus" | translate }} {{ "isRequiered" | translate }}.</div>
+          </div>
+    </div>
+    <div class="w-full flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+        <input  formControlName="title" class="pl-2 outline-none border-none" type="text" name="title" id="title" placeholder='{{ "title" | translate }}' />
+        <div *ngIf="addProductForm.get('title').invalid && (addProductForm.get('title').dirty || addProductForm.get('title').touched)">
+            <div *ngIf="addProductForm.get('title').errors?.['required']">{{ "title" | translate }} {{ "isRequiered" | translate }}.</div>
+          </div>
+    </div>
+    <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+        <input formControlName="description" class="pl-2 outline-none border-none" type="text" name="description" id="description" placeholder='{{ "details" | translate }} ' />
+        <div *ngIf="addProductForm.get('description').invalid && (addProductForm.get('description').dirty || addProductForm.get('description').touched)">
+            <div *ngIf="addProductForm.get('description').errors?.['required']">{{ "details" | translate }} {{ "isRequiered" | translate }}.</div>
+        </div>
+    </div>
+    <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+        <input formControlName="salary" class="pl-2 outline-none border-none" type="text" name="salary" id="salary" placeholder='{{ "cost" | translate }}' />
+        <div *ngIf="addProductForm.get('salary').invalid && (addProductForm.get('salary').dirty || addProductForm.get('salary').touched)">
+            <div *ngIf="addProductForm.get('salary').errors?.['required']">{{ "cost" | translate }} {{ "isRequiered" | translate }}.</div>
+        </div>
+    </div>
+    <!-- <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+       აქ ფოტოს დამატება უნდა გავაკეთო 
+        <input formControlName="image" class="pl-2 outline-none border-none" type="text" name="image" id="image" placeholder="Image" />
+        <div *ngIf="addProductForm.get('image').invalid && (addProductForm.get('image').dirty || addProductForm.get('image').touched)">
+            <div *ngIf="addProductForm.get('image').errors?.['required']">image {{ "isRequiered" | translate }}.</div>
+        </div>
+    </div> -->
+    <button type="submit" 
+        class="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2">{{ "add" | translate }} {{ "new" | translate }} {{ "product" | translate }}</button>
+    <span class="text-sm ml-2 ">
+        <a routerLink="/profile"
+            class="text-blue-400 hover:text-blue-700 underline">{{"cancel" | translate}}</a> 
+               changes will not be saved
+    </span>
+</form>

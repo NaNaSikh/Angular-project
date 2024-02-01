@@ -1,0 +1,17 @@
+<!-- <h2 mat-dialog-title>Confirm Deletion</h2>
+    <div mat-dialog-content>Are you sure you want to delete this item?</div>
+    <div mat-dialog-actions>
+      <button mat-button (click)="onCancelClick()">Cancel</button>
+      <button mat-button (click)="onDeleteClick()">Delete</button>
+    </div> -->
+
+    <div class="fixed top-0 left-0 w-full h-full bg-black/30 flex items-center justify-center">
+        <div class="flex flex-col p-4 gap-3 bg-white rounded-[12px]">
+         <h2 mat-dialog-title>Confirm Deletion</h2>
+         <div mat-dialog-content>Are you sure you want to delete this item?</div>
+         <div mat-dialog-actions class="flex items-center gap-2">
+           <button class="w-full bg-gray-300 flex items-center justify-center py-3" mat-button (click)="onCancelClick()">Cancel</button>
+           <button class="w-full bg-red-500 flex items-center justify-center py-3" mat-button (click)="onDeleteClick()">Delete</button>
+         </div>
+        </div>
+       </div>

@@ -1,0 +1,43 @@
+<div *ngIf="product$ | async as product">
+
+    <section class="text-gray-600 body-font overflow-hidden">
+        <div class="container px-5 py-6 mx-auto">
+            <div class="lg:w-4/5 mx-auto mb-10">
+                <a routerLink="/"
+                    class="flex w-max mt-6 text-white bg-black border-0 py-2 px-6 focus:outline-none hover:opacity-80 rounded">
+                {{"goBack" | translate}} </a>
+            </div>
+
+            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                    src={{product.imageUrl}}>
+                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <div class="flex items-center gap-2">
+                        <p class="font-light">  {{"category" | translate}} :</p>
+
+                        <h2 class="font-medium text-sm title-font text-gray-500 tracking-widest">{{product.category}}
+                        </h2>
+                    </div>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{product.title}}</h1>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{product.status}}</h1>
+                    <div class="flex flex-col gap-1 mt-6">
+                        <p class="font-bold">  {{"details" | translate}} :</p>
+                        <p class="leading-relaxed mb-10">{{product.description}}</p>
+
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <p class="title-font font-medium text-2xl text-gray-900"><span
+                                class="text-gray-600 font-normal">  {{"productOwner" | translate}} :</span> {{product.productOwner}}</p>
+                        <p class="title-font font-medium text-2xl text-gray-900"><span
+                                class="text-gray-600 font-normal">  {{"cost" | translate}} :</span> ${{product.salary}}</p>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div *ngIf="!product$">Product not found</div>
